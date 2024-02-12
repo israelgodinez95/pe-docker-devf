@@ -19,4 +19,6 @@ Docker es una plataforma que permite a los desarrolladores administrar aplicacio
 
 #### Git  
 
-El sistema de control de versiones usado para llevar un registro en los cambios en código que ocurran en nuestro software, se relaciona con DevOps porque sirve como una guía cuando se empiezan a trabajar workflows CD/CI, por ejemplo, si se realiza un cambio en nuestra aplicación y llega a haber algún problema con su funcionamiento, es mas fácil regresar a una versión anterior del código. 
+El sistema de control de versiones usado para llevar un registro en los cambios en código que ocurran en nuestro software, se relaciona con DevOps porque sirve como una guía cuando se empiezan a trabajar workflows CD/CI, por ejemplo, si se realiza un cambio en nuestra aplicación y llega a haber algún problema con su funcionamiento, es mas fácil regresar a una versión anterior del código.  
+
+### A continuación se presenta un ejemplo de dockerfile con errores: dockerfile:
