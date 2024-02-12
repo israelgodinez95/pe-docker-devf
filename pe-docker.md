@@ -23,4 +23,15 @@ El sistema de control de versiones usado para llevar un registro en los cambios 
 
 ### A continuación se presenta un ejemplo de dockerfile con errores: dockerfile:
 
-<img src="https://github.com/israelgodinez95/pe-docker-devf/blob/main/resources/Captura%20de%20pantalla%202024-02-11%20190011.png" alt="dockerfile" width="900">
+<img src="https://github.com/israelgodinez95/pe-docker-devf/blob/main/resources/Captura%20de%20pantalla%202024-02-11%20190011.png" alt="dockerfile" width="400">
+
+### Haz los ajustes/modificaciones necesarios para corregir el siguiente dockerfile.  
+
+El cambio lo haría sobre CMD[“node” , ”index.js”]. Esto es para establecer el comando que se ejecutara sobre la terminal cuando se inicia el contenedor, tiene mas sentido colocar algo que ejecute un scprit que tengamos en nuestro package.json. Quedaria de la siguiente manera:
+
+-- FROM node:14-alpine
+-- WORKDIR /app
+-- COPY package.json .
+-- RUN npm install
+-- COPY . .
+-- CMD [“npm” , “run” , ”dev”]
