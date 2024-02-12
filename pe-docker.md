@@ -125,6 +125,8 @@ RUN chmod +x /app/devOpsMultTableTest.sh
 
 CMD ["/app/devOpsMultTableTest.sh"]  
 
+Una vez hecho esto, hay que construir la imagen con docker build y despues crear y correr el contenedor con docker run.
+
 ## Sección 3: Integracion Continua / Entrega Continua (CI/CD)  
 
 ### 3.1 Pregunta Teórica: Explica que es la integración continua y como se utiliza en DevOps. Explica que es el despliegue continuo y como se utiliza en DevOps.  
