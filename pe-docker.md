@@ -29,11 +29,11 @@ El sistema de control de versiones usado para llevar un registro en los cambios 
 
 El cambio lo haría sobre CMD[“node” , ”index.js”]. Esto es para establecer el comando que se ejecutara sobre la terminal cuando se inicia el contenedor, tiene mas sentido colocar algo que ejecute un scprit que tengamos en nuestro package.json. Quedaria de la siguiente manera:
 
-FROM node:14-alpine 
-WORKDIR /app
-COPY package*.json ./
-RUN npm install
-COPY . .
+FROM node:14-alpine   
+WORKDIR /app  
+COPY package*.json ./  
+RUN npm install  
+COPY . .  
 CMD ["npm" , "run" , "dev"]  
 
 ### A continuación se presenta un ejemplo de dockerfile con errores: dockerfile:
