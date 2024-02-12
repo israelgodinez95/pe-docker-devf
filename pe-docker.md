@@ -69,7 +69,7 @@ CMD ["npm" , "run" , "dev"]  \
 
 2.- Despues ejecute los siguientes comandos usando git bash:  
 
-<img src="hhttps://github.com/israelgodinez95/pe-docker-devf/blob/main/resources/bash%20shell%20excercise.png" alt="dockerfile" width="400">  
+<img src="https://github.com/israelgodinez95/pe-docker-devf/blob/main/resources/bash%20shell%20excercise.png" alt="dockerfile" width="400">  
 
 El comando chmod +x devOpsMultTableTest.sh es para darle permisos de ejecución al archivo.
 La ejecucion del script es con: ./devOpsMultTableTest.sh  
