@@ -127,7 +127,18 @@ CMD ["/app/devOpsMultTableTest.sh"]
 
 ## Sección 3: Integracion Continua / Entrega Continua (CI/CD)  
 
-### 3.1 Pregunta Teórica: Explica que es la integración continua y como se utiliza en DevOps. Explica que es el despliegue continuo y como se utiliza en DevOps.
+### 3.1 Pregunta Teórica: Explica que es la integración continua y como se utiliza en DevOps. Explica que es el despliegue continuo y como se utiliza en DevOps.  
+
+La integracion continua:
+- Sirve para integrar cambios de codigo en un reposiorio comprtido, donde se automatizan builds y tests.
+- Ayuda a detectar errores de integración de un proyecto en etapas tempranas de la producción.
+
+El despliegue continuo:
+- Es para automatizar la entrega de software o cambios de codigo a entornos de producción despues de la integración continua.
+- Asegura que nuevas features, bug fixes y mejoras de software se entreguen en tiempo y forma.
+- Hace que cada cambio en el codigo que pase por las pruebas del pipeline CI se integre en el despliegue.
+
+Ambos enfoques son practicas escenciales de DevOps, y permiten a los equipos de desarrollo de software y los equipos de operaciones TI colaborar de la mejor manera posible, rapidamente y de manera confiable.
 
 ### 3.2 Ejercicio Práctico: Describe los pasos básicos que incluirías en un workflow de github actions para una app.
 
