@@ -29,11 +29,16 @@ El sistema de control de versiones usado para llevar un registro en los cambios 
 
 El cambio lo haría sobre CMD[“node” , ”index.js”]. Esto es para establecer el comando que se ejecutara sobre la terminal cuando se inicia el contenedor, tiene mas sentido colocar algo que ejecute un scprit que tengamos en nuestro package.json. Quedaria de la siguiente manera:
 
-FROM node:14-alpine   
+FROM node:14-alpine 
+
 WORKDIR /app  
+
 COPY package*.json ./  
+
 RUN npm install  
+
 COPY . .  
+
 CMD ["npm" , "run" , "dev"]  
 
 ### A continuación se presenta un ejemplo de dockerfile con errores: dockerfile:
@@ -44,10 +49,15 @@ CMD ["npm" , "run" , "dev"]
 
 En este otro caso eliminaría el (/app/) de (COPY package*.json /app/) porque estos son los archivos que se copiaran a la imagen de Docker, al ser (/app) el directorio en el que se almacena todo lo que se copie a la imagen Docker, no hace mucho sentido. Tambian habria que agregar el (./) al final del comando COPY para que los archivos se copien en el directorio actual. Y como en el caso anterior, lo mismo para el comando CMD [“node” , ”index.js”]. Para este caso, quedaria de la siguiente manera:
 
-- FROM node:14-alpine 
-- WORKDIR /app
-- COPY package*.json ./
-- RUN npm install
-- COPY . .
-- CMD ["npm" , "run" , "dev"]  
+FROM node:14-alpine  
+
+WORKDIR /app  
+
+COPY package*.json ./  
+
+RUN npm install  
+
+COPY . .  
+
+CMD ["npm" , "run" , "dev"]  
 
