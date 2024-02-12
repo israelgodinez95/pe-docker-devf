@@ -59,5 +59,13 @@ RUN npm install
 
 COPY . .  
 
-CMD ["npm" , "run" , "dev"]  
+CMD ["npm" , "run" , "dev"]  \
+  
+## Sección 2: Automatización y Orquestación  
+
+### 2.1 Ejercicio Práctico: Utilizando un script de shell, automatiza la creación de un directorio llamado "DevOps_Project" y dentro de él crea tres archivos: "app.js" crea un código de funciones básicas donde te de el resultado de la tabla de multiplicar de un número, "index.html" y "styles.css".
+
+1.- Primero cree el script de shell (.sh) con un editor de texto y lo guarde en mi carpeta PE-DOCKER-DEVF.
+
+2.- Despues ejecute los siguientes comandos usando git bash: 
 
