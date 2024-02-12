@@ -31,23 +31,23 @@ El cambio lo haría sobre CMD[“node” , ”index.js”]. Esto es para estable
 
 - FROM node:14-alpine 
 - WORKDIR /app
-- COPY package.json .
+- COPY package*.json ./
 - RUN npm install
 - COPY . .
-- CMD [“npm” , “run” , ”dev”]  
+- CMD ["npm" , "run" , "dev"]  
 
 ### A continuación se presenta un ejemplo de dockerfile con errores: dockerfile:
 
-<img src="https://github.com/israelgodinez95/pe-docker-devf/blob/main/resources/Captura%20de%20pantalla%202024-02-11%20190011.png" alt="dockerfile" width="400">
+<img src="https://github.com/israelgodinez95/pe-docker-devf/blob/main/resources/Captura%20de%20pantalla%202024-02-11%20191020.png" alt="dockerfile" width="400">
 
 ### Haz los ajustes/modificaciones necesarios para corregir el siguiente dockerfile.  
 
-El cambio lo haría sobre CMD[“node” , ”index.js”]. Esto es para establecer el comando que se ejecutara sobre la terminal cuando se inicia el contenedor, tiene mas sentido colocar algo que ejecute un scprit que tengamos en nuestro package.json. Quedaria de la siguiente manera:
+En este otro caso eliminaría el (/app/) de (COPY package*.json /app/) porque estos son los archivos que se copiaran a la imagen de Docker, al ser (/app) el directorio en el que se almacena todo lo que se copie a la imagen Docker, no hace mucho sentido. Tambian habria que agregar el (./) al final del comando COPY para que los archivos se copien en el directorio actual. Y como en el caso anterior, lo mismo para el comando CMD [“node” , ”index.js”]. Para este caso, quedaria de la siguiente manera:
 
 - FROM node:14-alpine 
 - WORKDIR /app
-- COPY package.json .
+- COPY package*.json ./
 - RUN npm install
 - COPY . .
-- CMD [“npm” , “run” , ”dev”]  
+- CMD ["npm" , "run" , "dev"]  
 
