@@ -67,5 +67,17 @@ CMD ["npm" , "run" , "dev"]  \
 
 1.- Primero cree el script de shell (.sh) con un editor de texto y lo guarde en mi carpeta PE-DOCKER-DEVF.
 
-2.- Despues ejecute los siguientes comandos usando git bash: 
+2.- Despues ejecute los siguientes comandos usando git bash:  
+
+<img src="hhttps://github.com/israelgodinez95/pe-docker-devf/blob/main/resources/bash%20shell%20excercise.png" alt="dockerfile" width="400">  
+
+El comando chmod +x devOpsMultTableTest.sh es para darle permisos de ejecución al archivo.
+La ejecucion del script es con: ./devOpsMultTableTest.sh  
+
+3.- Puede comprobarse la ejecucion correcta viendo la carpeta y sus archivos desde la terminal o desde Visual Studio Code. Se muestran en la imagen anterior.
+
+4.- Este es el HTML generado usando Live Server.  
+
+<img src="https://github.com/israelgodinez95/pe-docker-devf/blob/main/resources/html%20resultados%20shell%20example.png" alt="dockerfile" width="400">  
+
 
