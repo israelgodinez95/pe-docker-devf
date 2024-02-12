@@ -71,13 +71,15 @@ CMD ["npm" , "run" , "dev"]  \
 
 <img src="https://github.com/israelgodinez95/pe-docker-devf/blob/main/resources/bash%20shell%20excercise.png" alt="dockerfile" width="400">  
 
-El comando chmod +x devOpsMultTableTest.sh es para darle permisos de ejecución al archivo.
-La ejecucion del script es con: ./devOpsMultTableTest.sh  
+El comando: (chmod +x devOpsMultTableTest.sh) es para darle permisos de ejecución al archivo.
+La ejecucion del script es con: (./devOpsMultTableTest.sh)  
 
 3.- Puede comprobarse la ejecucion correcta viendo la carpeta y sus archivos desde la terminal o desde Visual Studio Code. Se muestran en la imagen anterior.
 
 4.- Este es el HTML generado usando Live Server.  
 
 <img src="https://github.com/israelgodinez95/pe-docker-devf/blob/main/resources/html%20resultados%20shell%20example.png" alt="dockerfile" width="400">  
+
+### 2.2 Ejercicio Práctico: Crea un archivo Dockerfile e instala las versiones de node [14.x ,16.x,18.x ] con el sistema op. Ubuntu, del ejercicio pasado debe correr la función hecha reciente en un contenedor de docker.
 
 
