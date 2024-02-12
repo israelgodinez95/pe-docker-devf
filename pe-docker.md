@@ -123,5 +123,14 @@ RUN chmod +x /app/devOpsMultTableTest.sh
 
 #Run the shell script  
 
-CMD ["/app/devOpsMultTableTest.sh"]
+CMD ["/app/devOpsMultTableTest.sh"]  
 
+## Sección 3: Integracion Continua / Entrega Continua (CI/CD)  
+
+### 3.1 Pregunta Teórica: Explica que es la integración continua y como se utiliza en DevOps. Explica que es el despliegue continuo y como se utiliza en DevOps.
+
+### 3.2 Ejercicio Práctico: Describe los pasos básicos que incluirías en un workflow de github actions para una app.
+
+### Seccion 4: Monitoreo y Gestion de Log
+
+### Pregunta Teórica: ¿Por qué es importante implementar el monitoreo en un entorno DevOps y cómo puede beneficiar a un equipo de desarrollo? (crea un ejemplo).
